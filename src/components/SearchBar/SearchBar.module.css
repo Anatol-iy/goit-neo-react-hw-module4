@@ -1,0 +1,59 @@
+.header {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 32px;
+  background-color: #3f51b5; /* Синий фон */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.searchForm {
+  display: flex;
+  width: 100%;
+  max-width: 600px;
+  background-color: white;
+  border: 2px solid #ddd;
+  overflow: hidden; /* Чтобы элементы не выходили за пределы */
+}
+
+.searchButton {
+  background-color: white;
+    border: 2px solid #ddd;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.searchButton svg {
+  width: 24px;
+  height: 24px;
+  color: rgb(48, 47, 47); /* Цвет иконки */
+}
+
+.searchButton:hover svg {
+  color: black; /* Цвет иконки при наведении */
+}
+
+.searchInput {
+  flex-grow: 1; /* Заполняет всё доступное пространство */
+  padding: 12px 16px;
+  font-size: 16px;
+  border: 2px solid #ddd; /* Цвет рамки */
+  border-left: none; /* Убираем левую границу, чтобы соединить с кнопкой */
+  color: black;
+  outline: none;
+  transition: border-color 0.3s;
+  background-color: white;
+}
+
+.searchInput:focus {
+  border-color: white; /* Изменение цвета рамки при фокусе */
+}
+
+.searchButton:focus {
+  outline: none; /* Убираем контур при фокусе */
+}
