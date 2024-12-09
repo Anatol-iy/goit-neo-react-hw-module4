@@ -4,7 +4,7 @@ import axios from "axios";
 axios.defaults.baseURL = "https://api.unsplash.com";
 
 // Ваш API-ключ
-const API_KEY = "jeO8vFD8I3vxhYPYPkwrauDoj21wIDjqetD6HcGR1e8";
+const API_KEY = "Z8s8vEfdxMVK0k9e-_bjP5b1T9gKLsMv3OwvOuqBZc4";
 
 // Заголовки для авторизации
 const headers = {
@@ -16,7 +16,7 @@ export const getImages = async () => {
   const { data } = await axios("/search/photos", {
     headers,
     params: {
-      query: "react", // Это пример, вы можете изменить запрос
+      query: "react",
       page: 1,
       per_page: 12,
     },
